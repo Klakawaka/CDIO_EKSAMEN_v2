@@ -34,7 +34,7 @@ public class Gui {
         playerlistPosition[playerTurn] = newPosition;
     }
     public void waitButton(){
-        String chosenButton = gui.getUserButtonPressed("Click to play", "Play"); //create and initilize chosenButton
+        String chosenButton = gui.getUserButtonPressed(player_name+" Click to play", "Play"); //create and initilize chosenButton
     }
     public void changeBalance(int playerNum, int newBalance){
         playerList[playerNum].setBalance(newBalance);
