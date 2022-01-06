@@ -38,7 +38,7 @@ public class Game {
 
         while(true){
             for(int i = 0; i < amount;i++){
-                gui.waitButton();
+                gui.waitButton(i);
                 runTurn(i);
 
 

@@ -23,18 +23,19 @@ public class Gui {
             player_name = gui.getUserString("Enter player name");
             playerList[i] = new GUI_Player(player_name, list[i].account.getBalance());
             gui.addPlayer(playerList[i]);
-            gui.getFields()[0].setCar(playerList[i], true);
+            gui.getFields()[0].drawCar(playerList[i], true);
         }
     }
 
 
     public void moveplayer(int playerTurn, int newPosition){
-        gui.getFields()[playerlistPosition[playerTurn]].setCar(playerList[playerTurn], false); //hide the players car
-        gui.getFields()[newPosition].setCar(playerList[playerTurn], true); //show the car in the new position
+        gui.getFields()[playerlistPosition[playerTurn]].drawCar(playerList[playerTurn], false); //hide the players car
+        gui.getFields()[newPosition].drawCar(playerList[playerTurn], true); //show the car in the new position
         playerlistPosition[playerTurn] = newPosition;
     }
-    public void waitButton(){
+    public void waitButton(int x){
         String chosenButton = gui.getUserButtonPressed(player_name+" Click to play", "Play"); //create and initilize chosenButton
+
     }
     public void changeBalance(int playerNum, int newBalance){
         playerList[playerNum].setBalance(newBalance);
@@ -44,6 +45,9 @@ public class Gui {
     public void Dice(int dice1,int dice2){
         gui.setDice(dice1,dice2);
     }
+
+
+
 }
 
 
