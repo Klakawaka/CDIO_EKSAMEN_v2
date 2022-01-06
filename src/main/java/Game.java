@@ -37,8 +37,10 @@ public class Game {
         gui.opsætSpillere(playerList,amount);
 
         while(true){
+
             for(int i = 0; i < amount;i++){
-                gui.waitButton(i);
+                Player nuvernespiller = playerList[i];
+                gui.waitButton(nuvernespiller.name);
                 runTurn(i);
 
 

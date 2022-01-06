@@ -21,6 +21,7 @@ public class Gui {
         playerlistPosition = new int[list.length];
         for (int i = 0; i < x; i++) {
             player_name = gui.getUserString("Enter player name");
+            list[i].name = player_name;
             playerList[i] = new GUI_Player(player_name, list[i].account.getBalance());
             gui.addPlayer(playerList[i]);
             gui.getFields()[0].drawCar(playerList[i], true);
@@ -33,8 +34,8 @@ public class Gui {
         gui.getFields()[newPosition].drawCar(playerList[playerTurn], true); //show the car in the new position
         playerlistPosition[playerTurn] = newPosition;
     }
-    public void waitButton(int x){
-        String chosenButton = gui.getUserButtonPressed(player_name+" Click to play", "Play"); //create and initilize chosenButton
+    public void waitButton(String currentPlayerName){
+        String chosenButton = gui.getUserButtonPressed(currentPlayerName+" Click to play", "Play"); //create and initilize chosenButton
 
     }
     public void changeBalance(int playerNum, int newBalance){
