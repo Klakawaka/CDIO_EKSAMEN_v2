@@ -38,6 +38,14 @@ public class Gui {
         String chosenButton = gui.getUserButtonPressed(currentPlayerName+" Click to play", "Play"); //create and initilize chosenButton
 
     }
+    public boolean buyButton(){
+        //String buyButton = gui.getUserButtonPressed(currentPlayerName+" Click to the card","Buy Card");
+        boolean Buy  = gui.getUserLeftButtonPressed(
+                "Want to buy the card?",
+                "Buy", "No"
+        );
+        return Buy;
+    }
     public void changeBalance(int playerNum, int newBalance){
         playerList[playerNum].setBalance(newBalance);
 

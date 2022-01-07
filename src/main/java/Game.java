@@ -3,7 +3,7 @@ public class Game {
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
-
+    Field field = new Field();
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
@@ -16,7 +16,7 @@ public class Game {
 
 
         gui.moveplayer(turnNum,player.position);
-        //field.field(player,player.position);
+        field.fields(player,player.position, gui.buyButton());
 
 
         gui.Dice(die1Facevalue,die2Facevalue);
