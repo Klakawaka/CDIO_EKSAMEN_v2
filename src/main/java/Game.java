@@ -46,5 +46,8 @@ public class Game {
 
 
 
-            }}}}
+            } ///if (gui.buyButton()){
+            // return (Lukket, så der ikke er mulighed for andre);
+            // }
+        }}}
 
