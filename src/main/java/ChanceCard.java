@@ -2,7 +2,7 @@ import java.lang.Math;
 
 public class ChanceCard {
 
-    private final int MAX = 12 ;
+    private final int MAX = 21 ;
     public int getChancecard(Player player) {
 
         int card = (int) (Math.random() * MAX) + 1;
@@ -40,6 +40,39 @@ public class ChanceCard {
             case 10:
                 System.out.println("Dental bill, pay 2000 kr");
                 player.account.addNewBalance(-2000);
+            case 11:
+                System.out.println("You have won the lottery, receive 500 kr.");
+                player.account.addNewBalance(+500);
+            case 12:
+                System.out.println("You have won the lottery, receive 500 kr.");
+                player.account.addNewBalance(+500);
+            case 13:
+                System.out.println("You receive your dividend. Receive 1000 kr from the bank");
+                player.account.addNewBalance(+1000);
+            case 14:
+                System.out.println("You receive your dividend. Receive 1000 kr from the bank");
+                player.account.addNewBalance(+1000);
+            case 15:
+                System.out.println("You receive your dividend. Receive 1000 kr from the bank");
+                player.account.addNewBalance(+1000);
+            case 16:
+                System.out.println("The council has remitted the tax of one quarter. Withdraw 3000 kr from the bank");
+                player.account.addNewBalance(+3000);
+            case 17:
+                System.out.println("You got a row of eleven correct on the pools. Receive 1000 kr.");
+                player.account.addNewBalance(+1000);
+            case 18:
+                System.out.println("Because of the inflation, you get a wage increase. Receive 1000 kr.");
+                player.account.addNewBalance(+1000);
+            case 19:
+                System.out.println("Your premium bond has returned. Receive 1000 kr from the bank");
+                player.account.addNewBalance(+1000);
+            case 20:
+                System.out.println("Your premium bond has returned. Receive 1000 kr from the bank");
+                player.account.addNewBalance(+1000);
+            case 21:
+                System.out.println("You have auctioned off some old furniture. Receive 1000 kr from the bank.");
+                player.account.addNewBalance(+1000);
 
                 /*
                 System.out.println("Du skal rykke 3 felter frem");
