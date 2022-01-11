@@ -2,7 +2,7 @@ import java.lang.Math;
 
 public class ChanceCard {
 
-    private final int MAX = 21 ;
+    private final int MAX = 30 ;
     public int getChancecard(Player player) {
 
         int card = (int) (Math.random() * MAX) + 1;
@@ -73,6 +73,42 @@ public class ChanceCard {
             case 21:
                 System.out.println("You have auctioned off some old furniture. Receive 1000 kr from the bank.");
                 player.account.addNewBalance(+1000);
+            case 22:
+                System.out.println("The value of self-grown from the kitchen garden make up 200 kr which you receive from the bank");
+                player.account.addNewBalance(+200);
+            case 23:
+                System.out.println("Move to start position");
+                player.setPosition(0);
+            case 24:
+                System.out.println("Move 3 fields forward");
+                player.addpostion(3);
+            case 25:
+                System.out.println("Move 3 fields back");
+                player.addpostion(-3);
+                if (player.position < 0) {
+                    player.position = 0;
+                }
+            case 26:
+                System.out.println("Move 3 fields back");
+                player.addpostion(-3);
+                if (player.position < 0) {
+                    player.position = 0;
+                }
+            case 27:
+                System.out.println("move forward to Frederiksberg Allé, If you pass the start then collect 4000 kr");
+                if (player.position > 11) {
+                    player.account.addNewBalance(+4000);
+                    player.setPosition(11);}
+                else {player.setPosition(11);}
+            case 28:
+                System.out.println("Go with Mols-linien, move your car forward and if you pass the start position then collect 4000 kr");
+            case 29:
+                System.out.println("Move to jail. You DON'T collect 4000 kr if you pass the start");
+                player.setPosition(10);
+            case 30:
+                System.out.println("Move to jail. You DON'T collect 4000 kr if you pass the start");
+                player.setPosition(10);
+
 
                 /*
                 System.out.println("Du skal rykke 3 felter frem");
