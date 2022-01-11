@@ -127,7 +127,24 @@ public class ChanceCard {
                 break;
             case 28:
                 System.out.println("Go with Mols-linien, move your car forward and if you pass the start position then collect 4000 kr");
-
+                if (player.position == 2) {
+                    player.setPosition(15);
+                }
+                else if (player.position == 7){
+                    player.setPosition(25);
+                }
+                else if (player.position == 17 || player.position == 22)  {
+                    player.setPosition(35);
+                }
+                else if (player.position == 33) {
+                    player.setPosition(5);
+                    player.account.addNewBalance(+4000);
+                }
+                else if (player.position == 36){
+                    player.setPosition(15);
+                    player.account.addNewBalance(+4000);
+                }
+                break;
             case 29:
                 System.out.println("Move to jail. You DON'T collect 4000 kr if you pass the start");
                 player.setPosition(10);
@@ -136,7 +153,6 @@ public class ChanceCard {
                 System.out.println("Move to jail. You DON'T collect 4000 kr if you pass the start");
                 player.setPosition(10);
                 break;
-
 
                 /*
                 System.out.println("Du skal rykke 3 felter frem");
