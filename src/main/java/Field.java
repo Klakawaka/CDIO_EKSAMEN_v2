@@ -8,6 +8,7 @@ public class Field {
             Grøningen,ØS,Bredgade,KongensNytorv,Carlsberg,Østergade,
             Amagertorv,Vimmelskaftet,Nygade,Bornholm,
             Frederiksberggade,betalSkat2,Rådhuspladsen;
+    ///int owner;
 
     ChanceCard chanceCard = new ChanceCard();
     public void fields(Player player,int playerpos,boolean x){
