@@ -14,6 +14,18 @@ public class Game {
         dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
 
+        // public class Game {
+        // Board board = new Board();
+        // Player player1 = new Player(name: "string");
+        //
+        // void runTurn() {
+        // Field currentField = board.fields();
+        // if (currentField instanceof Field) {
+        //      if (((Field) currentField). owner = null) {
+        //
+        // }}}
+        // ...
+
 
         gui.moveplayer(turnNum,player.position);
 

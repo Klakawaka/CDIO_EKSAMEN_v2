@@ -1,4 +1,17 @@
-public class Field {
+public class Field
+        // {
+        // String title;
+        // public Player owner;
+
+        // public Field(String title) {
+        // this.title = title;
+        // }
+        // public void buy (Player x) {
+        // this.owner = x;
+        // }}
+
+
+{
 
     int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
             Valbylandgade,Allegade,
