@@ -12,7 +12,10 @@ public class Field
 
 
 {
-
+String title;
+public Field(String title) {
+    this.title = title;
+}
     int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
             Valbylandgade,Allegade,
             FrederiksbergAlle,Tuborg,Bülowsvej,GammelKongevej,
