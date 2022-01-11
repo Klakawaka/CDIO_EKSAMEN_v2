@@ -22,10 +22,11 @@ public class Game {
         //        } else if (gui.buyButton()==true) {
         //            field.fields(player,player.position, true);
         //        }
-        field.fields(player,player.position, gui.buyButton());
+
 
 
         gui.Dice(die1Facevalue,die2Facevalue);
+        field.fields(player,player.position, gui.buyButton());
         gui.changeBalance(turnNum,player.account.getBalance());
 
         gui.moveplayer(turnNum,player.position);
