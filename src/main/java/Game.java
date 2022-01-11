@@ -16,6 +16,12 @@ public class Game {
 
 
         gui.moveplayer(turnNum,player.position);
+
+        //--  if (gui.buyButton()==false) {
+        //            field.fields(player,player.position, false);
+        //        } else if (gui.buyButton()==true) {
+        //            field.fields(player,player.position, true);
+        //        }
         field.fields(player,player.position, gui.buyButton());
 
 
@@ -46,8 +52,5 @@ public class Game {
 
 
 
-            } ///if (gui.buyButton()){
-            // return (Lukket, så der ikke er mulighed for andre);
-            // }
-        }}}
+            }}}}
 

@@ -41,10 +41,11 @@ public class Gui {
     public boolean buyButton(){
         //String buyButton = gui.getUserButtonPressed(currentPlayerName+" Click to the card","Buy Card");
         boolean Buy  = gui.getUserLeftButtonPressed(
-                "Want to buy the card?",
+                "Do you want to buy the card?",
                 "Buy", "No"
         );
         return Buy;
+        //---- gui.buyButton = occupied?
     }
     public void changeBalance(int playerNum, int newBalance){
         playerList[playerNum].setBalance(newBalance);
