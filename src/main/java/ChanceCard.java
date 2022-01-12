@@ -153,6 +153,36 @@ public class ChanceCard {
                 System.out.println("Move to jail. You DON'T collect 4000 kr if you pass the start");
                 player.setPosition(10);
                 break;
+            case 31:
+                System.out.println("move forward to Grønningen, If you pass the start then collect 4000 kr");
+                if (player.position > 24) {
+                    player.account.addNewBalance(+4000);
+                    player.setPosition(24);}
+                else {player.setPosition(24);}
+                break;
+            case 32:
+                System.out.println("move forward to Vimmelskaftet, If you pass the start then collect 4000 kr");
+                if (player.position > 32) {
+                    player.account.addNewBalance(+4000);
+                    player.setPosition(32);}
+                else {player.setPosition(32);}
+                break;
+            case 33:
+                System.out.println("Go with the closest ferry, if you pass the start then collect 4000 kr");
+
+                break;
+            case 34:
+                System.out.println("move forward to Strandvejen, If you pass the start then collect 4000 kr");
+                if (player.position > 19) {
+                    player.account.addNewBalance(+4000);
+                    player.setPosition(19);}
+                else {player.setPosition(19);}
+                break;
+            case 35:
+                System.out.println("Move forward to Rådhuspladsen");
+                player.setPosition(39);
+                break;
+
 
                 /*
                 System.out.println("Du skal rykke 3 felter frem");
