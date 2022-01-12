@@ -9,7 +9,7 @@ public class ChanceCard {
 
         switch (card) {
             case 1:
-           System.out.println("You have ran into a full stop, pay 1000 kr in fine");
+                System.out.println("You have ran into a full stop, pay 1000 kr in fine");
                 player.account.addNewBalance(-1000);
                 break;
             case 2:
@@ -122,25 +122,23 @@ public class ChanceCard {
                 System.out.println("move forward to Frederiksberg Allé, If you pass the start then collect 4000 kr");
                 if (player.position > 11) {
                     player.account.addNewBalance(+4000);
-                    player.setPosition(11);}
-                else {player.setPosition(11);}
+                    player.setPosition(11);
+                } else {
+                    player.setPosition(11);
+                }
                 break;
             case 28:
                 System.out.println("Go with Mols-linien, move your car forward and if you pass the start position then collect 4000 kr");
                 if (player.position == 2) {
                     player.setPosition(15);
-                }
-                else if (player.position == 7){
+                } else if (player.position == 7) {
                     player.setPosition(25);
-                }
-                else if (player.position == 17 || player.position == 22)  {
+                } else if (player.position == 17 || player.position == 22) {
                     player.setPosition(35);
-                }
-                else if (player.position == 33) {
+                } else if (player.position == 33) {
                     player.setPosition(5);
                     player.account.addNewBalance(+4000);
-                }
-                else if (player.position == 36){
+                } else if (player.position == 36) {
                     player.setPosition(15);
                     player.account.addNewBalance(+4000);
                 }
@@ -157,19 +155,35 @@ public class ChanceCard {
                 System.out.println("move forward to Grønningen, If you pass the start then collect 4000 kr");
                 if (player.position > 24) {
                     player.account.addNewBalance(+4000);
-                    player.setPosition(24);}
-                else {player.setPosition(24);}
+                    player.setPosition(24);
+                } else {
+                    player.setPosition(24);
+                }
                 break;
             case 32:
                 System.out.println("move forward to Vimmelskaftet, If you pass the start then collect 4000 kr");
                 if (player.position > 32) {
                     player.account.addNewBalance(+4000);
-                    player.setPosition(32);}
-                else {player.setPosition(32);}
+                    player.setPosition(32);
+                } else {
+                    player.setPosition(32);
+                }
                 break;
             case 33:
                 System.out.println("Go with the closest ferry, if you pass the start then collect 4000 kr");
-
+                if (player.position <= 5) {
+                    player.setPosition(15);
+                } else if (player.position <= 15) {
+                    player.setPosition(25);
+                } else if (player.position <= 25) {
+                    player.setPosition(35);
+                } else if (player.position <= 35) {
+                    player.setPosition(5);
+                    player.account.addNewBalance(+4000);
+                } else if (player.position <= 39) {
+                    player.setPosition(5);
+                    player.account.addNewBalance(+4000);
+                }
                 break;
             case 34:
                 System.out.println("move forward to Strandvejen, If you pass the start then collect 4000 kr");
