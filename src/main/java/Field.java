@@ -1,17 +1,22 @@
+/*
 public class Field {
     public Player owner;
     String title;
 
     public Field(String title) {
-        this.title = new title;
+        this.title = title;
     }
 
     //Denne linje nedenunder skal være til, ellers er der umiddelbart et problem i Board klassen.
     public void fields(Player player, int position, boolean buyButton, Player[] playerList) {
+
     }
 
     class StreetField extends Field {
-        int price; //eller public StreetField(int price) { }
+         public int StreetField(int price) {
+
+             return price;
+         }
 
         public StreetField(String title) {
             super(title);
@@ -47,7 +52,7 @@ public class Field {
 
 
         public void buy() {
-            this.owner = new owner;
+            this.owner =  owner;
         }
 
 
@@ -84,11 +89,14 @@ public class Field {
 public Field(String title) {
    this.title = title;
 
+ */
 
 
- */// Original
 
-    /*int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
+ /// Original
+public class Field {
+
+    int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
             Valbylandgade,Allegade,
             FrederiksbergAlle,Tuborg,Bülowsvej,GammelKongevej,
             DFDS,Bernstofssvej,Hellerupsvej,
@@ -316,8 +324,5 @@ public Field(String title) {
 }
 
 
-    public void fields() {
-    }
 
-    public void fields() {
-    }
+

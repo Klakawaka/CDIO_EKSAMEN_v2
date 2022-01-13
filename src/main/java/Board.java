@@ -1,3 +1,4 @@
+/*
 public class Board {
     Field[] fields = new Field[]{
             new Field("Start"),
@@ -32,3 +33,5 @@ public class Board {
             new Field("Rådhuspladsen"),
     };
 }
+
+ */
