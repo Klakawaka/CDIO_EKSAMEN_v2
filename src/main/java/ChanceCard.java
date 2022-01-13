@@ -2,23 +2,12 @@ import java.lang.Math;
 
 public class ChanceCard {
 
-    private final int MAX = 1 ;
+    private final int MAX = 38 ;
     public int getChancecard(Player player, Player[] playerList) {
 
         int card = (int) (Math.random() * MAX) + 1;
 
         switch (card) {
-
-            case 1:
-            System.out.println("It's your birthday, receive 200 kr from each player");
-            for (int i = 0; i < playerList.length; i++) {
-                playerList[i].account.addNewBalance(-200);
-            }
-            player.account.addNewBalance(playerList.length * 200);
-            break;
-
-
-            /*
             case 1:
                 System.out.println("You have ran into a full stop, pay 1000 kr in fine");
                 player.account.addNewBalance(-1000);
@@ -207,56 +196,27 @@ public class ChanceCard {
                 System.out.println("Move forward to Rådhuspladsen");
                 player.setPosition(39);
                 break;
-
-
-                /*
-                System.out.println("Du skal rykke 3 felter frem");
-                player.addpostion(3);
-                break;
-            case 4:
-                System.out.println("Du skal Rykke 3 felter tilbage");
-                player.addpostion(-3);
-                if (player.position < 0) {
-                    player.position = 0;
+            case 36:
+                System.out.println("It's your birthday, receive 200 kr from each player");
+                for (int i = 0; i < playerList.length; i++) {
+                    playerList[i].account.addNewBalance(-200);
                 }
+                player.account.addNewBalance(playerList.length * 200);
                 break;
-            case 5:
-                System.out.println("Du skal i fængsel i en runde");
-                player.setPosition(6); //6 er position for fængsel
-                break;
-            case 6:
-                System.out.println("Du skal rykke 5 felter frem");
-                player.addpostion(5);
-
-                break;
-            case 7:
-                System.out.println("Du skal rykke 5 felter tilbage");
-                player.addpostion(-5);
-                if (player.position < 0 ) {
-                    player.position = 0;
+            case 37:
+                System.out.println("You have paid for a potluck supper. Everyone pays back immediately. Receive 500 kr from each player");
+                for (int i = 0; i < playerList.length; i++) {
+                    playerList[i].account.addNewBalance(-500);
                 }
-            case 8:
-                System.out.println("Du får en gave på 300 dollars");
-                player.account.addNewBalance(+300);
+                player.account.addNewBalance(playerList.length * 500);
                 break;
-            case 9:
-                System.out.println("Du får en bøde på 300 dollars");
-                player.account.addNewBalance(-300);
+            case 38:
+                System.out.println("You are throwing a family party and get granted 500 kr from each player");
+                for (int i = 0; i < playerList.length; i++) {
+                    playerList[i].account.addNewBalance(-500);
+                }
+                player.account.addNewBalance(playerList.length * 500);
                 break;
-            case 10:
-                System.out.println("Du skal i fængsel i en runde");
-                player.setPosition(7); //7 er position for fængsel
-                break;
-            case 11:
-                System.out.println("Du får en gave på 500 dollars");
-                player.account.addNewBalance(+500);
-                break;
-            case 12:
-                System.out.println("Du får en bøde på 500 dollars");
-                player.account.addNewBalance(-500);
-                break;
-            case 13:
-                System.out.println(""); */
         }
         return card;
     }
