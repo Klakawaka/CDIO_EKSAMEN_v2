@@ -3,7 +3,7 @@ import java.lang.Math;
 public class ChanceCard {
 
     private final int MAX = 1 ;
-    public int getChancecard(Player player) {
+    public int getChancecard(Player player, Player[] playerList) {
 
         int card = (int) (Math.random() * MAX) + 1;
 
