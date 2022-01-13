@@ -1,4 +1,4 @@
-public class Board {
+/*public class Board {
     Field[] fields = new Field[]{
             new Field("Start"),
             new Field("Hvidovrevej"),
@@ -32,3 +32,4 @@ public class Board {
             new Field("Rådhuspladsen"),
     };
 }
+*/
