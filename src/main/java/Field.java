@@ -299,6 +299,7 @@ public class Field {
                 break;
             case 36:
                 chanceCard.getChancecard(player, playerList);
+                break;
             case 37:
                 Frederiksberggade = 350;
                 if (x) {

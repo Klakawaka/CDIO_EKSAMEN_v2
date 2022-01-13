@@ -5,10 +5,12 @@ public class ChanceCard {
     private final int MAX = 38 ;
     public int getChancecard(Player player, Player[] playerList) {
 
-        int card = (int) (Math.random() * MAX) + 1;
+        //int card = (int) (Math.random() * MAX) + 1;
+        int card = 1;
 
         switch (card) {
             case 1:
+                String text ="You have run into a full stop, pay 1000 kr as a fine";
                 System.out.println("You have run into a full stop, pay 1000 kr as a fine");
                 player.account.addNewBalance(-1000);
                 break;

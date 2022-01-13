@@ -1,9 +1,16 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Game {
     Dice dice1 = new Dice();
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
     Field field = new Field();
+    String file;
+    String[] read = new String[10];
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
@@ -13,6 +20,7 @@ public class Game {
         dice2.roll();
         dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
+
 
         // public class Game {
         // Board board = new Board();
@@ -46,6 +54,34 @@ public class Game {
 
     }
     public  void game() {
+        gui.chooseLanguage();
+        if (gui.chooseLanguage()){
+            file = "src/main/Engelsk oversættelse.txt";
+
+        }else{
+            file = "src/main/Dansk oversættelse.txt";
+        }
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        for(int i=0; i<read.length; i++){
+            try {
+                assert reader != null;
+                read[i] = reader.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
 
         int amount = gui.hentAntalSpillere();
         playerList = new Player[amount];

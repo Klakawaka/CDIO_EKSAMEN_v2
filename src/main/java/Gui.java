@@ -56,7 +56,15 @@ public class Gui {
         gui.setDice(dice1,dice2);
     }
 
+    public String chanceCardView(String text){
+        gui.displayChanceCard(text);
+        return text;
+    }
 
+    public boolean chooseLanguage(){
+        boolean choose = gui.getUserLeftButtonPressed("Choose language", "English", "Dansk");
+        return choose;
+    }
 
 }
 
