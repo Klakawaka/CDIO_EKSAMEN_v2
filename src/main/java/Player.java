@@ -9,8 +9,8 @@ public class Player {
         account.account();
     }
 
-    //adbalance bruges til case 1,2 og 6//
-    //adposition bruges til case 3 og 4
+    //addbalance bruges til case 1,2 og 6//
+    //addposition bruges til case 3 og 4
     public void addpostion(int toAddPosition){
         position = (position + toAddPosition)%39;
 

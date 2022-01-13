@@ -3,7 +3,7 @@ public class Game {
     Dice dice2 = new Dice();
     Player[] playerList;
     Gui gui = new Gui();
-    Field field = new Field();
+    Field field = new Field("Matador");
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
@@ -29,16 +29,15 @@ public class Game {
 
         gui.moveplayer(turnNum,player.position);
 
-        //--  if (gui.buyButton()==false) {
-        //            field.fields(player,player.position, false);
-        //        } else if (gui.buyButton()==true) {
-        //            field.fields(player,player.position, true);
-        //        }
-
+       //if (gui.buyButton()==false) {
+         //   field.fields(player, player.position, false);
+        //} else if (gui.buyButton()==true) {
+            //field.fields(player, player.position, true);
+        //}
 
 
         gui.Dice(die1Facevalue,die2Facevalue);
-        field.fields(player,player.position, gui.buyButton());
+        field.fields(player,player.position, gui.buyButton(), playerList);
         gui.changeBalance(turnNum,player.account.getBalance());
 
         gui.moveplayer(turnNum,player.position);
