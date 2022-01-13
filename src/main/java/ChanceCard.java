@@ -9,7 +9,7 @@ public class ChanceCard {
 
         switch (card) {
             case 1:
-                System.out.println("You have ran into a full stop, pay 1000 kr in fine");
+                System.out.println("You have run into a full stop, pay 1000 kr as a fine");
                 player.account.addNewBalance(-1000);
                 break;
             case 2:

@@ -1,4 +1,28 @@
-public class Field
+public class Field {
+    public Player Owner;
+
+    String title;
+    public Field(String title) {
+        this.title = new title;
+    }
+
+
+}
+
+   class StreetField extends Field {
+        StreetField Rødovrevej = new StreetField();
+        StreetField Hvidovrevej = new StreetField();
+        StreetField Øresund = new StreetField();
+        StreetField Roskildevej = new StreetField();
+        StreetField Valbylandsgade = new StreetField();
+        StreetField Allégade = new StreetField("Skal det her måske sættes i Board klassen?");
+
+       public StreetField(String title) {
+           super(title);
+       }
+   }
+
+
         // {
         // String title;
         // public Player owner;
@@ -11,12 +35,16 @@ public class Field
         // }}
 
 
-{
-//String title;
-//public Field(String title) {
-   // this.title = title;
+/*{
+/*String title;
+public Field(String title) {
+   this.title = title;
 
-    int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
+
+
+ */// Original
+
+    /*int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
             Valbylandgade,Allegade,
             FrederiksbergAlle,Tuborg,Bülowsvej,GammelKongevej,
             DFDS,Bernstofssvej,Hellerupsvej,
@@ -242,3 +270,10 @@ public class Field
     }
 
 }
+
+
+    public void fields() {
+    }
+
+    public void fields() {
+    }

@@ -2,7 +2,7 @@ public class Player {
     String name;
     int position;
     Bank account = new Bank();
-
+    //--public Player owner;
 
     public Player(String name) {
         this.name = name;
