@@ -2,12 +2,23 @@ import java.lang.Math;
 
 public class ChanceCard {
 
-    private final int MAX = 30 ;
+    private final int MAX = 1 ;
     public int getChancecard(Player player) {
 
         int card = (int) (Math.random() * MAX) + 1;
 
         switch (card) {
+
+            case 1:
+            System.out.println("It's your birthday, receive 200 kr from each player");
+            for (int i = 0; i < playerList.length; i++) {
+                playerList[i].account.addNewBalance(-200);
+            }
+            player.account.addNewBalance(playerList.length * 200);
+            break;
+
+
+            /*
             case 1:
                 System.out.println("You have ran into a full stop, pay 1000 kr in fine");
                 player.account.addNewBalance(-1000);
