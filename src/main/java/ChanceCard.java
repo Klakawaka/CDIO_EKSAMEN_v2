@@ -10,8 +10,8 @@ public class ChanceCard {
 
         switch (card) {
             case 1:
-                String text ="You have run into a full stop, pay 1000 kr as a fine";
-                System.out.println("You have run into a full stop, pay 1000 kr as a fine");
+                String text ="You have ran into a full stop, pay 1000 kr as a fine";
+                System.out.println("You have ran into a full stop, pay 1000 kr as a fine");
                 player.account.addNewBalance(-1000);
                 break;
             case 2:
@@ -183,7 +183,7 @@ public class ChanceCard {
                     player.setPosition(5);
                     player.account.addNewBalance(+4000);
                 } else if (player.position <= 39) {
-                    player.setPosition(5);
+                    player.setPosition(15);
                     player.account.addNewBalance(+4000);
                 }
                 break;
