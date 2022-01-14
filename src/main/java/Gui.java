@@ -17,11 +17,11 @@ public class Gui {
         return Integer.parseInt(chosenButton2);
     }
 
-    public void opsætSpillere(Player[] list, int x) {
+    public void opsætSpillere(Player[] list, int x,String text) {
         playerList = new GUI_Player[list.length];
         playerlistPosition = new int[list.length];
         for (int i = 0; i < x; i++) {
-            player_name = gui.getUserString("Enter player name");
+            player_name = gui.getUserString(text);
             list[i].name = player_name;
             playerList[i] = new GUI_Player(player_name, list[i].account.getBalance());
             gui.addPlayer(playerList[i]);
@@ -35,15 +35,14 @@ public class Gui {
         gui.getFields()[newPosition].drawCar(playerList[playerTurn], true); //show the car in the new position
         playerlistPosition[playerTurn] = newPosition;
     }
-    public void waitButton(String currentPlayerName){
-        String chosenButton = gui.getUserButtonPressed(currentPlayerName+" Click to play", "Play"); //create and initilize chosenButton
+    public void waitButton(String currentPlayerName,String text,String button){
+        String chosenButton = gui.getUserButtonPressed(currentPlayerName+text,button); //create and initilize chosenButton
 
     }
-    public boolean buyButton(){
-        //String buyButton = gui.getUserButtonPressed(currentPlayerName+" Click to the card","Buy Card");
+    public boolean buyButton(String text, String textYes,String textNO){
         boolean Buy  = gui.getUserLeftButtonPressed(
-                "Do you want to buy the card?",
-                "Buy", "No"
+                text,
+                textYes, textNO
         );
         return Buy;
         //---- gui.buyButton = occupied?
@@ -57,9 +56,9 @@ public class Gui {
         gui.setDice(dice1,dice2);
     }
 
-    public String chanceCardView(String text){
+    public void chanceCardView(String text){
         gui.displayChanceCard(text);
-        return text;
+
     }
 
     public boolean chooseLanguage(){

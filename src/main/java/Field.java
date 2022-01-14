@@ -106,8 +106,8 @@ public class Field {
             Frederiksberggade,betalSkat2,Rådhuspladsen;
     ///int owner;
 
-    ChanceCard chanceCard = new ChanceCard();
-    public void fields(Player player,int playerpos,boolean x, Player[] playerList){
+    //ChanceCard chanceCard = new ChanceCard();
+    public void fields(Player player,int playerpos,boolean x){//, Player[] playerList,int text){
         switch (playerpos){
             case 0:
                Start = 200;
@@ -120,7 +120,7 @@ public class Field {
                 }
                 break;
             case 2:
-                chanceCard.getChancecard(player, playerList);
+                //chanceCard.getChancecard(player, playerList,text);
                 break;
             case 3:
               Hvidovrevej = 60;
@@ -145,7 +145,7 @@ public class Field {
                 }
                 break;
             case 7:
-                chanceCard.getChancecard(player, playerList);
+                //chanceCard.getChancecard(player, playerList,text);
                 break;
             case 8:
                 Valbylandgade = 100;
@@ -199,7 +199,7 @@ public class Field {
                 }
                 break;
             case 17:
-                chanceCard.getChancecard(player, playerList);
+                //chanceCard.getChancecard(player, playerList,text);
                 break;
             case 18:
                 Hellerupsvej = 180;
@@ -223,7 +223,7 @@ public class Field {
                 }
                 break;
             case 22:
-                chanceCard.getChancecard(player, playerList);
+                //chanceCard.getChancecard(player, playerList,text);
                 break;
             case 23:
               Østerbrogade = 220;
@@ -283,7 +283,7 @@ public class Field {
                 }
                 break;
             case 33:
-                chanceCard.getChancecard(player, playerList);
+                //chanceCard.getChancecard(player, playerList,text);
                 break;
             case 34:
                 Nygade = 320;
@@ -298,7 +298,7 @@ public class Field {
                 }
                 break;
             case 36:
-                chanceCard.getChancecard(player, playerList);
+                //chanceCard.getChancecard(player, playerList,text);
                 break;
             case 37:
                 Frederiksberggade = 350;

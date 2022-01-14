@@ -3,17 +3,18 @@ import java.lang.Math;
 public class ChanceCard {
 
     private final int MAX = 38 ;
-    public int getChancecard(Player player, Player[] playerList) {
+    public int getChancecard(Player player, Player[] playerList,int number) {
 
         //int card = (int) (Math.random() * MAX) + 1;
         int card = 1;
 
         switch (card) {
             case 1:
-                String text ="You have ran into a full stop, pay 1000 kr as a fine";
+                 number = 10;
                 System.out.println("You have ran into a full stop, pay 1000 kr as a fine");
                 player.account.addNewBalance(-1000);
-                break;
+                return number;
+                //break;
             case 2:
                 System.out.println("Pay 300 kr for a car wash and greasing");
                 player.account.addNewBalance(-300);

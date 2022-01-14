@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
+
 
 
 public class Game {
@@ -12,7 +12,9 @@ public class Game {
     Gui gui = new Gui();
     Field field = new Field();
     String file;
-    String[] read = new String[10];
+    String[] read = new String[81];
+    int x;
+    ChanceCard chanceCard = new ChanceCard();
     private void runTurn(int turnNum ){
         Player player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
@@ -22,6 +24,7 @@ public class Game {
         dice2.roll();
         dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
+
 
 
         // public class Game {
@@ -47,7 +50,13 @@ public class Game {
 
 
         gui.Dice(die1Facevalue,die2Facevalue);
-        field.fields(player,player.position, gui.buyButton(), playerList);
+        field.fields(player,player.position, gui.buyButton(read[4],read[5],read[6]));//, playerList,x);
+        if (player.position == 2 || player.position == 7 || player.position == 17 ||
+                player.position == 22 || player.position == 33 || player.position == 36){
+            chanceCard.getChancecard(player,playerList,x);
+        }
+
+        gui.chanceCardView(read[x]);
         gui.changeBalance(turnNum,player.account.getBalance());
 
         gui.moveplayer(turnNum,player.position);
@@ -89,13 +98,13 @@ public class Game {
         for(int i = 0; i < amount; i++ ) {
             playerList[i] = new Player(gui.player_name);
         }
-        gui.opsætSpillere(playerList,amount);
+        gui.opsætSpillere(playerList,amount,read[1]);
 
         while(true){
 
             for(int i = 0; i < amount;i++){
                 Player nuvernespiller = playerList[i];
-                gui.waitButton(nuvernespiller.name);
+                gui.waitButton(nuvernespiller.name,read[2],read[3]);
                 runTurn(i);
 
 

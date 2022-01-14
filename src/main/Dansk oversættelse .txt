@@ -1,13 +1,11 @@
 Hvor mange skal deltage i spillet?
 indtast spillerens navn
-Klik på start for at starte spillet
+ Klik på start for at starte spillet
+Spil
 Vil du gerne købe kortet?
-Vil du gerne købe feltet?
 Køb
 Nej
 Du får et ekstra tur
-
-
 Du modtager 200 kr på startlinjen
 //Chancekort
 Du er løbet ind i et fuld stop, betal 1000 kr i bøde

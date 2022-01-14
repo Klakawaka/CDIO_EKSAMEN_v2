@@ -1,6 +1,7 @@
 How many players are playing?
 Enter player name
-Click play to start
+ Click play to start
+Play
 Do you want to buy the card? 
 Buy 
 No 
