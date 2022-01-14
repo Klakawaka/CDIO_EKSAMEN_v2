@@ -5,7 +5,7 @@ Do you want to buy the card?
 Buy 
 No 
 You get an extra turn
-
+//ChanceCards
 You have ran into a full stop, pay 1000 kr in fine
 Pay 300 kr for a car wash and greasing
 Pay 200 kr for delivery of 2 crates of beer
@@ -35,7 +35,8 @@ Go with the closest ferry. if you pass the start then collect 4000 kr
 Move forward to Strandvejen, if you pass the start position then collect 4000 kr
 Move forward to rådhuspladsen 
 
-You will receive 200 kr on the starting position 
+You will receive 200 kr on the starting position
+//Fields
 You have landed on Rødovrevej 
 You have landed on Hvidovrevej 
 You have landed on betalSkat1 

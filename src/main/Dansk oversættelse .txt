@@ -9,7 +9,7 @@ Du får et ekstra tur
 
 
 Du modtager 200 kr på startlinjen
-
+//Chancekort
 Du er løbet ind i et fuld stop, betal 1000 kr i bøde
 Betal 300 kr for bilvask og indfedtning 
 Betal 200 kr for levering af 2 kasser øl
@@ -38,7 +38,7 @@ Ryk frem til Vimmelskaftet. Hvis du passerer startlinjen modtager du 4000 kr
 Tag den nærmeste færge.  Hvis du passerer startlinjen modtager du 4000 kr
 Ryk frem til Strandvejen.  Du modtager du 4000 kr hvis du passerer startlinjen
 Ryk frem til rådhuspladsen 
-
+//Felter
 Du har landet på feltet Rødovrevej
 Du har landet på feltet Hvidovrevej
 Du har landet på feltet betal skat 1
