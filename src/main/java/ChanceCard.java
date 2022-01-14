@@ -1,20 +1,21 @@
 import java.lang.Math;
 
 public class ChanceCard {
-
+    private int textNum;
+    int card = 1;
     private final int MAX = 38 ;
-    public int getChancecard(Player player, Player[] playerList,int number) {
+    public int getChancecard(Player player, Player[] playerList) {
 
         //int card = (int) (Math.random() * MAX) + 1;
-        int card = 1;
+
 
         switch (card) {
             case 1:
-                 number = 10;
+                 //number = number + 10;
                 System.out.println("You have ran into a full stop, pay 1000 kr as a fine");
                 player.account.addNewBalance(-1000);
-                return number;
-                //break;
+                //return number;
+                break;
             case 2:
                 System.out.println("Pay 300 kr for a car wash and greasing");
                 player.account.addNewBalance(-300);
@@ -221,6 +222,15 @@ public class ChanceCard {
                 player.account.addNewBalance(playerList.length * 500);
                 break;
         }
+
         return card;
+    }
+    public int chanceCardText(){
+      switch (card){
+          case 1:
+              textNum = 10;
+              break;
+      }
+      return textNum;
     }
 }

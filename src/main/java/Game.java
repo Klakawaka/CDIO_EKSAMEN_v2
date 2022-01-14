@@ -53,10 +53,12 @@ public class Game {
         field.fields(player,player.position, gui.buyButton(read[4],read[5],read[6]));//, playerList,x);
         if (player.position == 2 || player.position == 7 || player.position == 17 ||
                 player.position == 22 || player.position == 33 || player.position == 36){
-            chanceCard.getChancecard(player,playerList,x);
+            chanceCard.getChancecard(player,playerList);
+            chanceCard.chanceCardText();
+            gui.chanceCardView(read[chanceCard.chanceCardText()]);
         }
 
-        gui.chanceCardView(read[x]);
+
         gui.changeBalance(turnNum,player.account.getBalance());
 
         gui.moveplayer(turnNum,player.position);
