@@ -1,0 +1,86 @@
+Hvor mange skal deltage i spillet?
+indtast spillerens navn
+Klik på start for at starte spillet
+Vil du gerne købe kortet?
+Vil du gerne købe feltet?
+Køb
+Nej
+Du får et ekstra tur
+
+
+Du modtager 200 kr på startlinjen
+
+Du er løbet ind i et fuld stop, betal 1000 kr i bøde
+Betal 300 kr for bilvask og indfedtning 
+Betal 200 kr for levering af 2 kasser øl
+Betal 3000 kr for bilreparation
+Du har købt 4 nye dæk til din bil, betal 1000 kr
+Du har fået en parkeringsbøde, betal 200 kr i bøde
+Betal din bilforsikring, 1000 kr
+Du har været i udlandet og købt for mange cigaretter. Betal 200 kr i told
+Betal 2000 kr for din tandlægeregning
+Du har vundet i lotteriet, modtag 500 kr
+Du modtager dit udbytte. Modtag 1000 kr fra banken
+Rådet har eftergivet kvartalsskatten. Hæv 3000 kr fra banken
+Du har fået en række på elleve rigtige på puljerne. Modtag 1000 kr
+På grund af inflationen får du en lønstigning. Modtag 1000 kr 
+Din præmieobligation er vendt tilbage. Modtag 1000 kr fra banken
+Du har bortauktioneret nogle gamle møbler. Modtag 1000 kr fra banken
+Værdien af selvdyrket fra køkkenhaven udgør 200 kr som du modtager fra banken
+Ryk til start positionen 
+Ryk 3 felter frem 
+Ryk 3 felter tilbage
+Ryk frem til Frederiksberg Allé. Hvis du passerer startlinjen modtager du 4000 kr
+Tag Molslinjen, ryk din bil frem og hvis du passerer startlinjen modtager du 4000 kr
+Flyt til fængslet. Du modtager ikke 4000 kr hvis du passerer startlinjen
+Ryk frem til Grøningen. Hvis du passerer startlinjen modtager du 4000 kr fra banken
+Ryk frem til Vimmelskaftet. Hvis du passerer startlinjen modtager du 4000 kr
+Tag den nærmeste færge.  Hvis du passerer startlinjen modtager du 4000 kr
+Ryk frem til Strandvejen.  Du modtager du 4000 kr hvis du passerer startlinjen
+Ryk frem til rådhuspladsen 
+
+Du har landet på feltet Rødovrevej
+Du har landet på feltet Hvidovrevej
+Du har landet på feltet betal skat 1
+Du har landet på feltet Øresund
+Du har landet på feltet Roskildevej
+Du har landet på feltet Valby Landgade
+Du har landet på feltet Allegade
+Du har landet på feltet Frederiksberg Allé
+Du har landet på feltet Tuborg
+Du har landet på feltet Bülowsvej
+Du har landet på feltet Gammel Kongevej
+Du har landet på feltet DFDS
+Du har landet på feltet Bernstofssvej
+Du har landet på feltet Hellerupvej
+Du har landet på feltet Strandvejen
+Du har landet på feltet Helle
+Du har landet på feltet Trianglen
+Du har landet på feltet Østerbrogade
+Du har landet på feltet Grøningen
+Du har landet på feltet Øs
+Du har landet på feltet Bredgade
+Du har landet på feltet Kongens Nytorv
+Du har landet på feltet Carlsberg
+Du har landet på feltet Østergade
+Du har landet på feltet Amagertorv
+Du har landet på feltet Vimmelskaftet
+Du har landet på feltet Nygade
+Du har landet på feltet Bornholm
+Du har landet på feltet Frederiksberggade
+Du har landet på feltet betal skat 2
+Du har landet på feltet Rådhuspladsen
+
+Du har modtaget 200 kr
+200 kr er blevet trukket fra din saldo
+1000 kr er blevet tilføjet til din saldo
+Du har mistet 1000 kr 
+2000 kr er blevet tilføjet til din saldo
+2000 kr er blevet trukket fra din saldo
+Du har modtaget 3000 kr
+Du har mistet 3000 kr 
+500 kr er blevet tilføjet til din saldo
+4000 kr er blevet tilføjet til din saldo 
+
+ 
+

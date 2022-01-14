@@ -1,0 +1,81 @@
+How many players are playing?
+Enter player name
+Click play to start
+Do you want to buy the card? 
+Buy 
+No 
+You get an extra turn
+
+You have ran into a full stop, pay 1000 kr in fine
+Pay 300 kr for a car wash and greasing
+Pay 200 kr for delivery of 2 crates of beer
+pay 3000 kr for car repair
+you have bought 4 new tyres for your car, pay 1000 kr
+You have received a parking ticket, pay 200 kr in fine
+Pay your car insurance, 1000 kr
+You have been overseas and bought too many cigarettes, pay 200 kr in customs duty
+Dental bill, pay 2000 kr
+You have won the lottery, receive 500 kr
+You receive your dividend. Receive 1000 kr from the bank
+The council has remitted the tax the tax of quarter. Withdraw 3000 kr from the bank
+You got a row of eleven correct on the pools. Receive 1000 kr 
+Because of the inflation, you get a wage increase. Receive 1000 kr
+Your premium bond has returned. Recieve 1000 kr from the bank
+You have auctioned off some old furniture. Receive 1000 kr from the bank
+The value of self-grown from the kitchen garden make up 200 kr which you receive from the bank
+Move to start position 
+Move 3 fields forward 
+Move 3 fields back
+Move forward to Frederiksberg Allé, if you pass the start then collect 4000 kr
+Go with Mols-linien, move your car forward and if you pass the start position then collect 4000 kr
+Move to jail. You DON’T collect 4000 kr if you pass the start
+Move forward to Grønningen, if you pass the start then collect 4000 kr from the bank
+Move forward to Vimmelskaftet, if you pass the start collect 4000 kr
+Go with the closest ferry. if you pass the start then collect 4000 kr
+Move forward to Strandvejen, if you pass the start position then collect 4000 kr
+Move forward to rådhuspladsen 
+
+You will receive 200 kr on the starting position 
+You have landed on Rødovrevej 
+You have landed on Hvidovrevej 
+You have landed on betalSkat1 
+You have landed on Øresund
+You have landed on Roskildevej 
+You have landed on Valby landgade 
+You have landed on Allegade 
+You have landed on Frederiksberg Allé 
+You have landed on Tuborg 
+You have landed on Bülowsvej 
+You have landed on Gammel Kongevej
+You have landed on DFDS
+You have landed on Bernstofssvej
+You have landed on Hellerupvej
+You have landed on Strandvejen
+You have landed on Helle
+You have landed on Trianglen
+You have landed on Østerbrogade
+You have landed on Grøningen
+You have landed on ØS
+You have landed on Bredgade
+You have landed on Kongens Nytorv
+You have landed on Carlsberg
+You have landed on Østergade
+You have landed on Amagertorv
+You have landed on Vimmelskaftet
+You have landed on Nygade
+You have landed on Bornholm
+You have landed on Frederiksberggade
+You have landed on betalSkat2
+You have landed on Rådhuspladsen
+
+200 kr has been added to your balance
+200 kr has ben deducted from your balance 
+1000 kr has been added to your balance
+1000 kr has ben deducted from your balance 
+2000 kr has been added to your balance
+2000 kr has ben deducted from your balance
+3000 kr has been added to your balance
+3000 kr has ben deducted from your balance 
+500 kr has been added to your balance
+4000 kr has been added to your balance 
+
