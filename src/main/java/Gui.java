@@ -2,6 +2,7 @@ import gui_fields.GUI_Player;
 import gui_main.GUI;
 
 public class Gui {
+
     String player_name;
     GUI_Player[] playerList; //create and initilize player //create and initilize player
     GUI gui; //create gui variable
@@ -11,8 +12,8 @@ public class Gui {
         gui = new GUI();
     }
 
-    public int hentAntalSpillere() {
-        String chosenButton2 = gui.getUserButtonPressed("How many players are playing?", "2", "3", "4"); //create and initilize chosenButton
+    public int hentAntalSpillere(String text) {
+        String chosenButton2 = gui.getUserButtonPressed(text, "2", "3", "4"); //create and initilize chosenButton
         return Integer.parseInt(chosenButton2);
     }
 

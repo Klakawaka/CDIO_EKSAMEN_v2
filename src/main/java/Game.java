@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+
 
 public class Game {
     Dice dice1 = new Dice();
@@ -54,12 +56,11 @@ public class Game {
 
     }
     public  void game() {
-        gui.chooseLanguage();
         if (gui.chooseLanguage()){
-            file = "src/main/Engelsk oversættelse.txt";
+            file = "src/main/Engelsk oversættelse .txt";
 
         }else{
-            file = "src/main/Dansk oversættelse.txt";
+            file = "src/main/Dansk oversættelse .txt";
         }
         BufferedReader reader = null;
         try {
@@ -83,7 +84,7 @@ public class Game {
 
 
 
-        int amount = gui.hentAntalSpillere();
+        int amount = gui.hentAntalSpillere(read[0]);
         playerList = new Player[amount];
         for(int i = 0; i < amount; i++ ) {
             playerList[i] = new Player(gui.player_name);
