@@ -2,11 +2,10 @@ import java.lang.Math;
 
 public class ChanceCard {
     private int textNum;
-    int card = 1;
+    //int card = 1; test
     private final int MAX = 38 ;
+    int card = (int) (Math.random() * MAX) + 1;
     public int getChancecard(Player player, Player[] playerList) {
-
-        //int card = (int) (Math.random() * MAX) + 1;
 
 
         switch (card) {
@@ -288,37 +287,37 @@ public class ChanceCard {
               textNum = 24;
               break;
           case 21:
-              textNum = 26;
+              textNum = 25;
               break;
           case 22:
-              textNum = 27;
+              textNum = 26;
               break;
           case 23:
-              textNum = 28;
+              textNum = 27;
               break;
           case 24:
-              textNum = 29;
+              textNum = 28;
               break;
           case 25:
-              textNum = 31;
+              textNum = 29;
               break;
           case 26:
-              textNum = 31;
+              textNum = 29;
               break;
           case 27:
-              textNum = 32;
+              textNum = 30;
               break;
           case 28:
-              textNum = 33;
+              textNum = 31;
               break;
           case 29:
-              textNum = 34;
+              textNum = 32;
               break;
           case 30:
-              textNum = 35;
+              textNum = 32;
               break;
           case 31:
-              textNum = 36;
+              textNum = 33;
               break;
           case 32:
               textNum = 34;
