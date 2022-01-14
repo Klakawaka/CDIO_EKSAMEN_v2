@@ -6,6 +6,7 @@ Do you want to buy the card?
 Buy 
 No 
 You get an extra turn
+You will receive 200 kr on the starting position
 //ChanceCards
 You have ran into a full stop, pay 1000 kr in fine
 Pay 300 kr for a car wash and greasing
@@ -34,9 +35,7 @@ Move forward to Grønningen, if you pass the start then collect 4000 kr from the
 Move forward to Vimmelskaftet, if you pass the start collect 4000 kr
 Go with the closest ferry. if you pass the start then collect 4000 kr
 Move forward to Strandvejen, if you pass the start position then collect 4000 kr
-Move forward to rådhuspladsen 
-
-You will receive 200 kr on the starting position
+Move forward to rådhuspladsen
 //Fields
 You have landed on Rødovrevej 
 You have landed on Hvidovrevej 

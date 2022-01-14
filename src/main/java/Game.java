@@ -54,7 +54,6 @@ public class Game {
         if (player.position == 2 || player.position == 7 || player.position == 17 ||
                 player.position == 22 || player.position == 33 || player.position == 36){
             chanceCard.getChancecard(player,playerList);
-            chanceCard.chanceCardText();
             gui.chanceCardView(read[chanceCard.chanceCardText()]);
         }
 

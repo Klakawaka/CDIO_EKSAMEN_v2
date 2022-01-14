@@ -230,6 +230,109 @@ public class ChanceCard {
           case 1:
               textNum = 10;
               break;
+          case 2:
+              textNum = 11;
+              break;
+          case 3:
+              textNum = 12;
+              break;
+          case 4:
+              textNum = 13;
+              break;
+          case 5:
+              textNum = 13;
+              break;
+          case 6:
+              textNum = 14;
+              break;
+          case 7:
+              textNum = 15;
+              break;
+          case 8:
+              textNum = 16;
+              break;
+          case 9:
+              textNum = 17;
+              break;
+          case 10:
+              textNum = 18;
+              break;
+          case 11:
+              textNum = 19;
+               break;
+          case 12:
+              textNum = 19;
+              break;
+          case 13:
+              textNum = 20;
+              break;
+          case 14:
+              textNum = 20;
+              break;
+          case 15:
+              textNum = 20;
+              break;
+          case 16:
+              textNum = 21;
+              break;
+          case 17:
+              textNum = 22;
+              break;
+          case 18:
+              textNum = 23;
+              break;
+          case 19:
+              textNum = 24;
+              break;
+          case 20:
+              textNum = 24;
+              break;
+          case 21:
+              textNum = 26;
+              break;
+          case 22:
+              textNum = 27;
+              break;
+          case 23:
+              textNum = 28;
+              break;
+          case 24:
+              textNum = 29;
+              break;
+          case 25:
+              textNum = 31;
+              break;
+          case 26:
+              textNum = 31;
+              break;
+          case 27:
+              textNum = 32;
+              break;
+          case 28:
+              textNum = 33;
+              break;
+          case 29:
+              textNum = 34;
+              break;
+          case 30:
+              textNum = 35;
+              break;
+          case 31:
+              textNum = 36;
+              break;
+          case 32:
+              textNum = 34;
+              break;
+          case 33:
+              textNum = 35;
+              break;
+          case 34:
+              textNum = 36;
+              break;
+          case 35:
+              textNum = 37;
+              break;
+
       }
       return textNum;
     }
