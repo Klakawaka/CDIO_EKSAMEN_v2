@@ -2,7 +2,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
+import java.lang.Math;
+import java.util.Arrays;
 
 
 public class Game {
@@ -12,7 +13,8 @@ public class Game {
     Gui gui = new Gui();
     Field field = new Field();
     String file;
-    String[] read = new String[81];
+    String[] read = new String[84];
+
     int x;
     ChanceCard chanceCard = new ChanceCard();
     private void runTurn(int turnNum ){
@@ -24,6 +26,8 @@ public class Game {
         dice2.roll();
         dicesum = die1Facevalue + die2Facevalue;
         player.addpostion(dicesum);
+        final int MAX = 38 ;
+        int card = (int) (Math.random() * MAX) + 1;
 
 
 
@@ -53,8 +57,14 @@ public class Game {
         field.fields(player,player.position, gui.buyButton(read[4],read[5],read[6]));//, playerList,x);
         if (player.position == 2 || player.position == 7 || player.position == 17 ||
                 player.position == 22 || player.position == 33 || player.position == 36){
-            chanceCard.getChancecard(player,playerList);
-            gui.chanceCardView(read[chanceCard.chanceCardText()]);
+            chanceCard.getChancecard(player,playerList,card);
+            gui.chanceCardView(read[chanceCard.chanceCardText(card)]);
+        }
+        if (player.position == 30){
+            player.position = 10;
+            if (die1Facevalue != die2Facevalue){
+                player.position = 10;
+            }
         }
 
 
@@ -66,6 +76,7 @@ public class Game {
 
     }
     public  void game() {
+        Arrays.fill(Gui.read, "");
         if (gui.chooseLanguage()){
             file = "src/main/Engelsk oversættelse .txt";
 

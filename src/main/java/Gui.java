@@ -1,5 +1,8 @@
-import gui_fields.GUI_Player;
+import gui_fields.*;
 import gui_main.GUI;
+
+import java.awt.*;
+import java.io.BufferedReader;
 
 public class Gui {
 
@@ -7,9 +10,68 @@ public class Gui {
     GUI_Player[] playerList; //create and initilize player //create and initilize player
     GUI gui; //create gui variable
     int[] playerlistPosition;
+    public static String[] read = new String[84];
+
 
     public Gui(){
-        gui = new GUI();
+     GUI_Field[] fields = {
+        new GUI_Start("Start",read[82]+"","få 4000 kr", Color.red,Color.black),
+             new GUI_Street("Rødovrevej","Pris 1200 Kr","","1200",Color.blue,Color.black),
+             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
+             new GUI_Street("Hvidovrevej","Pris 1200 Kr","","1200",Color.blue,Color.black),
+             new GUI_Tax("Skat","4000 Kr","betale skat",Color.darkGray,Color.white),
+             new GUI_Shipping("default","Øresund","Pris 4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Street("Rødovrevej","Pris 2000 Kr","","2000",Color.pink,Color.black),
+             new GUI_Chance("?","prøv lykken","",Color.gray,Color.black),
+             new GUI_Street("Valbylandgade","Pris 2000 Kr","","2000",Color.pink,Color.black),
+             new GUI_Street("Allegade","Pris 2400 Kr","","2400",Color.pink,Color.black),
+             new GUI_Jail("default","Fængsel","besøg","",Color.gray,Color.black),
+             new GUI_Street("FrederiksbergAlle","Pris 2800 Kr","","2800",Color.green,Color.black),
+             new GUI_Brewery("default","Tuborg","Pris 3000 Kr","","3000",Color.black,Color.white),
+             new GUI_Street("Bülowsvej","Pris 2800 Kr","","2800",Color.green,Color.black),
+             new GUI_Street("GammelKongevej","Pris 3200 Kr","","3200",Color.green,Color.black),
+             new GUI_Shipping("default","D.F.D.S","4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Street("Bernstofssvej","Pris 3600 Kr","","3600",Color.lightGray,Color.black),
+             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
+             new GUI_Street("Hellerupsvej","Pris 3600 Kr","","3600",Color.lightGray,Color.black),
+             new GUI_Street("Strandvejen","Pris 4000 Kr","","4000",Color.lightGray,Color.black),
+             new GUI_Refuge("default","Parkering","Gratis penge","",Color.white,Color.black),
+             new GUI_Street("Trianglen","Pris 4400 Kr","","4400",Color.red,Color.black),
+             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
+             new GUI_Street("Østerbrogade","Pris 4400 Kr","","4400",Color.red,Color.black),
+             new GUI_Street("Grøningen","Pris 4800 Kr","","4800",Color.red,Color.black),
+             new GUI_Shipping("default","Ø.S","4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Street("Bredgade","Pris 5200 Kr","","5200",Color.white,Color.black),
+             new GUI_Street("KongensNytorv","Pris 5200 Kr","","5200",Color.white,Color.black),
+             new GUI_Brewery("default","Carlsberg","Pris 3000 Kr","","3000",Color.black,Color.white),
+             new GUI_Street("Østergade","Pris 5600 Kr","","5600",Color.white,Color.black),
+             new GUI_Jail("default","GÅ I FÆNGSEL","GÅ I FÆNGSEL","",Color.gray,Color.black),
+             new GUI_Street("Amagertorv","Pris 6000 Kr","","6000",Color.yellow,Color.black),
+             new GUI_Street("Vimmelskaftet","Pris 6000 Kr","","6000",Color.yellow,Color.black),
+             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
+             new GUI_Street("Nygade","Pris 6400 Kr","","6400",Color.yellow,Color.black),
+             new GUI_Shipping("default","Bornholm","4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
+             new GUI_Street("Frederiksberggade","Pris 7000 Kr","","7000",Color.yellow,Color.black),
+             new GUI_Tax("Skat","2000 Kr","betale skat",Color.darkGray,Color.white),
+             new GUI_Street("Rådhuspladsen","Pris 8000 Kr","","8000",Color.yellow,Color.black),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        };
+        gui = new GUI(fields,Color.cyan);
     }
 
     public int hentAntalSpillere(String text) {

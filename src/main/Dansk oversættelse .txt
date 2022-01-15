@@ -80,5 +80,6 @@ Du har mistet 3000 kr
 500 kr er blevet tilføjet til din saldo
 4000 kr er blevet tilføjet til din saldo 
 
- 
+ Pris
+ Prøv lykken
 
