@@ -331,6 +331,15 @@ public class ChanceCard {
           case 35:
               textNum = 37;
               break;
+          case 36:
+              textNum = 91;
+              break;
+          case 37:
+              textNum = 92;
+              break;
+          case 38:
+              textNum = 93;
+              break;
 
       }
       return textNum;

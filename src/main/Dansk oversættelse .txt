@@ -89,4 +89,7 @@ Du har mistet 3000 kr
  SPILLET ER SLUT!
  Sluk spillet
  Ik tryk på mig O_O
+ Det er din fødselsdag, modtag 200 kr fra hver spiller
+ Du har betalt for en middagsmad. Alle betaler tilbage med det samme. Modtag 500 kr fra hver spiller
+ Du holder familiefest og får 500 kr fra hver spiller
 
