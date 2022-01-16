@@ -1,7 +1,7 @@
 public class Bank {
     private int balance;
 
-    public void account() {balance = 10000;}
+    public void account() {balance = 30000;}
 
     public boolean addBalance(int money) {
         money = money + balance;

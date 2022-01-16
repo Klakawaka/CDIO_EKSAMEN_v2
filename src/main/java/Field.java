@@ -96,7 +96,7 @@ public Field(String title) {
  /// Original
 public class Field {
 
-    int Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
+    /* Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
             Valbylandgade,Allegade,
             FrederiksbergAlle,Tuborg,Bülowsvej,GammelKongevej,
             DFDS,Bernstofssvej,Hellerupsvej,
@@ -106,214 +106,217 @@ public class Field {
             Frederiksberggade,betalSkat2,Rådhuspladsen;
     ///int owner;
 
-    //ChanceCard chanceCard = new ChanceCard();
+     */
+
+
     public void fields(Player player,int playerpos,boolean x){//, Player[] playerList,int text){
         switch (playerpos){
             case 0:
-               Start = 200;
-               player.account.addNewBalance(+200);
+               //Start = 4000;
+               player.account.addNewBalance(+4000);
                break;
             case 1:
-                Rødovrevej = 60;
+                //Rødovrevej = 1200;
                 if (x) {
-                    player.account.addNewBalance(-60);
+                    player.account.addNewBalance(-1200);
                 }
                 break;
-            case 2:
+            //case 2:
                 //chanceCard.getChancecard(player, playerList,text);
-                break;
+                //break;
             case 3:
-              Hvidovrevej = 60;
+              //Hvidovrevej = 1200;
                 if (x) {
-                    player.account.addNewBalance(-60);
+                    player.account.addNewBalance(-1200);
                 }
               break;
             case 4:
-                betalSkat1 = 200;
-                player.account.addNewBalance(-200);
+                //betalSkat1 = 4000;
+                player.account.addNewBalance(-4000);
                 break;
             case 5:
-                Øresund = 200;
+                //Øresund = 4000;
                 if (x) {
-                    player.account.addNewBalance(-200);
+                    player.account.addNewBalance(-4000);
                 }
                 break;
             case 6:
-                Roskildevej = 100;
+                //Roskildevej = 2000;
                 if (x) {
-                    player.account.addNewBalance(-100);
+                    player.account.addNewBalance(-2000);
                 }
                 break;
-            case 7:
+            //case 7:
                 //chanceCard.getChancecard(player, playerList,text);
-                break;
+                //break;
             case 8:
-                Valbylandgade = 100;
+                //Valbylandgade = 2000;
                 if (x) {
-                    player.account.addNewBalance(-100);
+                    player.account.addNewBalance(-2000);
                 }
                 break;
             case 9:
-                Allegade = 120;
+                //Allegade = 2400;
                 if (x) {
-                    player.account.addNewBalance(-120);
+                    player.account.addNewBalance(-2400);
                 }
                 break;
-            case 10:
+            //case 10:
                 //Fængsel
-                break;
+                //break;
             case 11:
-                FrederiksbergAlle =140;
+                //FrederiksbergAlle =2800;
                 if (x) {
-                    player.account.addNewBalance(-140);
+                    player.account.addNewBalance(-2800);
                 }
                 break;
             case 12:
-                Tuborg = 150;
+                //Tuborg = 3000;
                 if (x) {
-                    player.account.addNewBalance(-150);
+                    player.account.addNewBalance(-3000);
                 }
                 break;
             case 13:
-                Bülowsvej =140;
+                //Bülowsvej =2800;
                 if (x) {
-                    player.account.addNewBalance(-140);
+                    player.account.addNewBalance(-2800);
                 }
                 break;
             case 14:
-                GammelKongevej = 140;
+                //GammelKongevej = 3200;
                 if (x) {
-                    player.account.addNewBalance(-140);
+                    player.account.addNewBalance(-3200);
                 }
                 break;
             case 15:
-                DFDS = 200;
+                //DFDS = 4000;
                 if (x) {
-                    player.account.addNewBalance(-200);
+                    player.account.addNewBalance(-4000);
                 }
                 break;
             case 16:
-                Bernstofssvej = 180;
+               // Bernstofssvej = 3600;
                 if (x) {
-                    player.account.addNewBalance(-180);
+                    player.account.addNewBalance(-3600);
                 }
                 break;
-            case 17:
+            //case 17:
                 //chanceCard.getChancecard(player, playerList,text);
-                break;
+                //break;
             case 18:
-                Hellerupsvej = 180;
+                //Hellerupsvej = 3600;
                 if (x) {
-                    player.account.addNewBalance(-180);
+                    player.account.addNewBalance(-3600);
                 }
                 break;
             case 19:
-                Strandvejen = 180;
+                //Strandvejen = 4000;
                 if (x) {
-                    player.account.addNewBalance(-180);
+                    player.account.addNewBalance(-4000);
                 }
                 break;
             case 20:
-                Helle = 0;
+               int Helle = 1000;
+                player.account.addNewBalance(+Helle);
                 break;
             case 21:
-                Trianglen = 220;
+                //Trianglen = 4400;
                 if (x) {
-                    player.account.addNewBalance(-220);
+                    player.account.addNewBalance(-4400);
                 }
                 break;
-            case 22:
+           // case 22:
                 //chanceCard.getChancecard(player, playerList,text);
-                break;
+               // break;
             case 23:
-              Østerbrogade = 220;
+              //Østerbrogade = 4400;
                 if (x) {
-                    player.account.addNewBalance(-220);
+                    player.account.addNewBalance(-4400);
                 }
                 break;
             case 24:
-                Grøningen = 240;
+               // Grøningen = 4800;
                 if (x) {
-                    player.account.addNewBalance(-240);
+                    player.account.addNewBalance(-4800);
                 }
                 break;
             case 25:
-                ØS = 200;
+                //ØS = 4000;
                 if (x) {
-                    player.account.addNewBalance(-200);
+                    player.account.addNewBalance(-4000);
                 }
                 break;
             case 26:
-                Bredgade = 260;
+                //Bredgade = 5200;
                 if (x) {
-                    player.account.addNewBalance(-260);
+                    player.account.addNewBalance(-5200);
                 }
                 break;
             case 27:
-                KongensNytorv = 260;
+                //KongensNytorv = 5200;
                 if (x) {
-                    player.account.addNewBalance(-260);
+                    player.account.addNewBalance(-5200);
                 }
                 break;
             case 28:
-                Carlsberg = 150;
+                //Carlsberg = 3000;
                 if (x) {
-                    player.account.addNewBalance(-150);
+                    player.account.addNewBalance(-3000);
                 }
                 break;
             case 29:
-                Østergade = 280;
+                //Østergade = 5600;
                 if (x) {
-                    player.account.addNewBalance(-280);
+                    player.account.addNewBalance(-5600);
                 }
                 break;
-            case 30:
+            //case 30:
                 //Fængsel
-                break;
+                //break;
             case 31:
-                Amagertorv = 300;
+                //Amagertorv = 6000;
                 if (x) {
-                    player.account.addNewBalance(-300);
+                    player.account.addNewBalance(-6000);
                 }
                 break;
             case 32:
-                Vimmelskaftet = 300;
+                //Vimmelskaftet = 6000;
                 if (x) {
-                    player.account.addNewBalance(-300);
+                    player.account.addNewBalance(-6000);
                 }
                 break;
-            case 33:
+            //case 33:
                 //chanceCard.getChancecard(player, playerList,text);
-                break;
+                //break;
             case 34:
-                Nygade = 320;
+                //Nygade = 6400;
                 if (x) {
-                    player.account.addNewBalance(-320);
+                    player.account.addNewBalance(-6400);
                 }
                 break;
             case 35:
-                Bornholm = 200;
+                //Bornholm = 4000;
                 if (x) {
-                    player.account.addNewBalance(-200);
+                    player.account.addNewBalance(-4000);
                 }
                 break;
-            case 36:
+            //case 36:
                 //chanceCard.getChancecard(player, playerList,text);
-                break;
+                //break;
             case 37:
-                Frederiksberggade = 350;
+                //Frederiksberggade = 7000;
                 if (x) {
-                    player.account.addNewBalance(-350);
+                    player.account.addNewBalance(-7000);
                 }
                 break;
             case 38:
-                betalSkat2 = 100;
-                player.account.addNewBalance(-100);
+               // betalSkat2 = 2000;
+                player.account.addNewBalance(-2000);
                 break;
             case 39:
-                Rådhuspladsen = 400;
+                //Rådhuspladsen = 8000;
                 if (x) {
-                    player.account.addNewBalance(-400);
+                    player.account.addNewBalance(-8000);
                 }
                 break;
 

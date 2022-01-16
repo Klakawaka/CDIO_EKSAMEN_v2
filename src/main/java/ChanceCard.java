@@ -3,9 +3,9 @@ import java.lang.Math;
 public class ChanceCard {
     private int textNum;
     //int card = 1; test
-    private final int MAX = 38 ;
-    int card = (int) (Math.random() * MAX) + 1;
-    public int getChancecard(Player player, Player[] playerList) {
+    //private final int MAX = 38 ;
+    //int card = (int) (Math.random() * MAX) + 1;
+    public int getChancecard(Player player, Player[] playerList,int card) {
 
 
         switch (card) {
@@ -224,7 +224,7 @@ public class ChanceCard {
 
         return card;
     }
-    public int chanceCardText(){
+    public int chanceCardText(int card){
       switch (card){
           case 1:
               textNum = 10;
