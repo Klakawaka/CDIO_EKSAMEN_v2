@@ -10,7 +10,7 @@ public class Gui {
     GUI_Player[] playerList; //create and initilize player //create and initilize player
     GUI gui; //create gui variable
     int[] playerlistPosition;
-    public static String[] read = new String[92];
+    public static String[] read = new String[95];
 
 
     public  Gui(){

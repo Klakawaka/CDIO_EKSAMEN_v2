@@ -16,7 +16,7 @@ public class Game {
     Gui gui = new Gui();
     Field field = new Field();
     String file;
-    String[] read = new String[92];
+    String[] read = new String[95];
 
 
     ChanceCard chanceCard = new ChanceCard();
