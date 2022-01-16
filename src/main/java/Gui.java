@@ -2,7 +2,7 @@ import gui_fields.*;
 import gui_main.GUI;
 
 import java.awt.*;
-import java.io.BufferedReader;
+
 
 public class Gui {
 
@@ -10,65 +10,51 @@ public class Gui {
     GUI_Player[] playerList; //create and initilize player //create and initilize player
     GUI gui; //create gui variable
     int[] playerlistPosition;
-    public static String[] read = new String[84];
+    public static String[] read = new String[92];
 
 
-    public Gui(){
+    public  Gui(){
      GUI_Field[] fields = {
-        new GUI_Start("Start",read[82]+"","få 4000 kr", Color.red,Color.black),
-             new GUI_Street("Rødovrevej","Pris 1200 Kr","","1200",Color.blue,Color.black),
-             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
-             new GUI_Street("Hvidovrevej","Pris 1200 Kr","","1200",Color.blue,Color.black),
-             new GUI_Tax("Skat","4000 Kr","betale skat",Color.darkGray,Color.white),
-             new GUI_Shipping("default","Øresund","Pris 4000 Kr","","4000",Color.white,Color.black),
-             new GUI_Street("Rødovrevej","Pris 2000 Kr","","2000",Color.pink,Color.black),
-             new GUI_Chance("?","prøv lykken","",Color.gray,Color.black),
-             new GUI_Street("Valbylandgade","Pris 2000 Kr","","2000",Color.pink,Color.black),
-             new GUI_Street("Allegade","Pris 2400 Kr","","2400",Color.pink,Color.black),
-             new GUI_Jail("default","Fængsel","besøg","",Color.gray,Color.black),
-             new GUI_Street("FrederiksbergAlle","Pris 2800 Kr","","2800",Color.green,Color.black),
-             new GUI_Brewery("default","Tuborg","Pris 3000 Kr","","3000",Color.black,Color.white),
-             new GUI_Street("Bülowsvej","Pris 2800 Kr","","2800",Color.green,Color.black),
-             new GUI_Street("GammelKongevej","Pris 3200 Kr","","3200",Color.green,Color.black),
-             new GUI_Shipping("default","D.F.D.S","4000 Kr","","4000",Color.white,Color.black),
-             new GUI_Street("Bernstofssvej","Pris 3600 Kr","","3600",Color.lightGray,Color.black),
-             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
-             new GUI_Street("Hellerupsvej","Pris 3600 Kr","","3600",Color.lightGray,Color.black),
-             new GUI_Street("Strandvejen","Pris 4000 Kr","","4000",Color.lightGray,Color.black),
-             new GUI_Refuge("default","Parkering","Gratis penge","",Color.white,Color.black),
-             new GUI_Street("Trianglen","Pris 4400 Kr","","4400",Color.red,Color.black),
-             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
-             new GUI_Street("Østerbrogade","Pris 4400 Kr","","4400",Color.red,Color.black),
-             new GUI_Street("Grøningen","Pris 4800 Kr","","4800",Color.red,Color.black),
-             new GUI_Shipping("default","Ø.S","4000 Kr","","4000",Color.white,Color.black),
-             new GUI_Street("Bredgade","Pris 5200 Kr","","5200",Color.white,Color.black),
-             new GUI_Street("KongensNytorv","Pris 5200 Kr","","5200",Color.white,Color.black),
-             new GUI_Brewery("default","Carlsberg","Pris 3000 Kr","","3000",Color.black,Color.white),
-             new GUI_Street("Østergade","Pris 5600 Kr","","5600",Color.white,Color.black),
-             new GUI_Jail("default","GÅ I FÆNGSEL","GÅ I FÆNGSEL","",Color.gray,Color.black),
-             new GUI_Street("Amagertorv","Pris 6000 Kr","","6000",Color.yellow,Color.black),
-             new GUI_Street("Vimmelskaftet","Pris 6000 Kr","","6000",Color.yellow,Color.black),
-             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
-             new GUI_Street("Nygade","Pris 6400 Kr","","6400",Color.yellow,Color.black),
-             new GUI_Shipping("default","Bornholm","4000 Kr","","4000",Color.white,Color.black),
-             new GUI_Chance("?","Prøv lykken","",Color.gray,Color.black),
-             new GUI_Street("Frederiksberggade","Pris 7000 Kr","","7000",Color.yellow,Color.black),
-             new GUI_Tax("Skat","2000 Kr","betale skat",Color.darkGray,Color.white),
-             new GUI_Street("Rådhuspladsen","Pris 8000 Kr","","8000",Color.yellow,Color.black),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        new GUI_Start("Start",read[82]+" 4000 Kr","få 4000 kr", Color.red,Color.black),
+             new GUI_Street("Rødovrevej",read[82]+" 1200 Kr","","1200",Color.blue,Color.white),
+             new GUI_Chance("?",read[83]+"",read[83]+"",Color.gray,Color.black),
+             new GUI_Street("Hvidovrevej",read[82]+" 1200 Kr","","1200",Color.blue,Color.white),
+             new GUI_Tax(read[84]+"","4000 Kr","betale skat",Color.darkGray,Color.white),
+             new GUI_Shipping("default","Øresund",read[82]+" 4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Street("Rødovrevej",read[82]+" 2000 Kr","","2000",Color.pink,Color.black),
+             new GUI_Chance("?",read[83]+"",read[83]+"",Color.gray,Color.black),
+             new GUI_Street("Valbylandgade",read[82]+" 2000 Kr","","2000",Color.pink,Color.black),
+             new GUI_Street("Allegade",read[82]+" 2400 Kr","","2400",Color.pink,Color.black),
+             new GUI_Jail("default",read[85]+"",read[85]+"",read[85]+"",Color.gray,Color.black),
+             new GUI_Street("FrederiksbergAlle",read[82]+" 2800 Kr","","2800",Color.green,Color.black),
+             new GUI_Brewery("default","Tuborg",read[82]+" 3000 Kr","","3000",Color.black,Color.white),
+             new GUI_Street("Bülowsvej",read[82]+" 2800 Kr","","2800",Color.green,Color.black),
+             new GUI_Street("GammelKongevej",read[82]+" 3200 Kr","","3200",Color.green,Color.black),
+             new GUI_Shipping("default","D.F.D.S",read[82]+" 4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Street("Bernstofssvej",read[82]+" 3600 Kr","","3600",Color.lightGray,Color.black),
+             new GUI_Chance("?",read[83]+"",read[83]+"",Color.gray,Color.black),
+             new GUI_Street("Hellerupsvej",read[82]+" 3600 Kr","","3600",Color.lightGray,Color.black),
+             new GUI_Street("Strandvejen",read[82]+" 4000 Kr","","4000",Color.lightGray,Color.black),
+             new GUI_Refuge("default",read[87]+"",read[87]+"","",Color.white,Color.black),
+             new GUI_Street("Trianglen",read[82]+" 4400 Kr","","4400",Color.red,Color.black),
+             new GUI_Chance("?",read[83]+"",read[83]+"",Color.gray,Color.black),
+             new GUI_Street("Østerbrogade",read[82]+" 4400 Kr","","4400",Color.red,Color.black),
+             new GUI_Street("Grøningen",read[82]+" 4800 Kr","","4800",Color.red,Color.black),
+             new GUI_Shipping("default","Ø.S",read[82]+" 4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Street("Bredgade",read[82]+" 5200 Kr","","5200",Color.white,Color.black),
+             new GUI_Street("KongensNytorv",read[82]+" 5200 Kr","","5200",Color.white,Color.black),
+             new GUI_Brewery("default","Carlsberg",read[82]+" 3000 Kr","","3000",Color.black,Color.white),
+             new GUI_Street("Østergade",read[82]+" 5600 Kr","","5600",Color.white,Color.black),
+             new GUI_Jail("default",read[86]+"",read[86]+"",read[86]+"",Color.gray,Color.black),
+             new GUI_Street("Amagertorv",read[82]+" 6000 Kr","","6000",Color.yellow,Color.black),
+             new GUI_Street("Vimmelskaftet",read[82]+" 6000 Kr","","6000",Color.yellow,Color.black),
+             new GUI_Chance("?",read[83]+"",read[83]+"",Color.gray,Color.black),
+             new GUI_Street("Nygade",read[82]+" 6400 Kr","","6400",Color.yellow,Color.black),
+             new GUI_Shipping("default","Bornholm",read[82]+" 4000 Kr","","4000",Color.white,Color.black),
+             new GUI_Chance("?",read[83]+"",read[83]+"",Color.gray,Color.black),
+             new GUI_Street("Frederiksberggade",read[82]+" 7000 Kr","","7000",Color.yellow,Color.black),
+             new GUI_Tax(read[84]+"","2000 Kr","",Color.darkGray,Color.white),
+             new GUI_Street("Rådhuspladsen",read[82]+" 8000 Kr","","8000",Color.yellow,Color.black),
 
         };
         gui = new GUI(fields,Color.cyan);
@@ -107,7 +93,7 @@ public class Gui {
                 textYes, textNO
         );
         return Buy;
-        //---- gui.buyButton = occupied?
+
     }
     public void changeBalance(int playerNum, int newBalance){
         playerList[playerNum].setBalance(newBalance);
@@ -127,7 +113,20 @@ public class Gui {
         boolean choose = gui.getUserLeftButtonPressed("Choose language", "English", "Dansk");
         return choose;
     }
+    public void showMessage(String text){
+        gui.showMessage(text);
+    }
+    public void endGame(){
+        gui.close();
+    }
+    public boolean exitGame(String text, String textYes,String textNO){
+        boolean exit  = gui.getUserLeftButtonPressed(
+                text,
+                textYes, textNO
+        );
+        return exit;
 
+    }
 }
 
 

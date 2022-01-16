@@ -1,24 +1,27 @@
+
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.Math;
-import java.util.Arrays;
+
 
 
 public class Game {
     Dice dice1 = new Dice();
     Dice dice2 = new Dice();
     Player[] playerList;
+    Player player;
     Gui gui = new Gui();
     Field field = new Field();
     String file;
-    String[] read = new String[84];
+    String[] read = new String[92];
 
     int x;
     ChanceCard chanceCard = new ChanceCard();
     private void runTurn(int turnNum ){
-        Player player = playerList[turnNum];
+        player = playerList[turnNum];
         int die1Facevalue = dice1.roll();
         int die2Facevalue = dice2.roll();
         int dicesum;
@@ -54,11 +57,11 @@ public class Game {
 
 
         gui.Dice(die1Facevalue,die2Facevalue);
-        field.fields(player,player.position, gui.buyButton(read[4],read[5],read[6]));//, playerList,x);
-        if (player.position == 2 || player.position == 7 || player.position == 17 ||
+        field.fields(player,player.position, gui.buyButton(read[4],read[5],read[6]));
+        if (player.position == 2 || player.position == 7 || player.position == 17 || // ChanceKort placeringer
                 player.position == 22 || player.position == 33 || player.position == 36){
             chanceCard.getChancecard(player,playerList,card);
-            gui.chanceCardView(read[chanceCard.chanceCardText(card)]);
+            gui.chanceCardView(read[chanceCard.chanceCardText(card)]);// Viser hvilket ChanceKort man har trukket
         }
         if (player.position == 30){
             player.position = 10;
@@ -74,14 +77,14 @@ public class Game {
 
 
 
+
     }
     public  void game() {
-        Arrays.fill(Gui.read, "");
         if (gui.chooseLanguage()){
-            file = "src/main/Engelsk oversættelse .txt";
+            file = "src/main/Engelsk oversættelse .txt"; //henter engelske tekster
 
         }else{
-            file = "src/main/Dansk oversættelse .txt";
+            file = "src/main/Dansk oversættelse .txt"; // henter Danske tekster
         }
         BufferedReader reader = null;
         try {
@@ -91,7 +94,7 @@ public class Game {
         }
         for(int i=0; i<read.length; i++){
             try {
-                assert reader != null;
+                assert reader != null; // hele den her try/catch gør at vores kan læse de 2 filer som giver text til vores spil
                 read[i] = reader.readLine();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -102,6 +105,8 @@ public class Game {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Gui.read = read;
+        gui = new Gui();
 
 
 
@@ -118,6 +123,14 @@ public class Game {
                 Player nuvernespiller = playerList[i];
                 gui.waitButton(nuvernespiller.name,read[2],read[3]);
                 runTurn(i);
+                if (player.account.getBalance() <= 0){ // hvis spileren rammer bunden (har 0kr tilbage)
+                    if(gui.exitGame(read[88],read[89],read[90])){
+                        gui.endGame();
+                    }
+
+
+                }
+
 
 
 
