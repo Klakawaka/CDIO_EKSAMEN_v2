@@ -1,3 +1,10 @@
+/*This class is not used in the programme, but is something we tried to work on,
+unfortunately the time was not there when needed. So we decided to go back to our code that we started on.
+this is just to show what we tried to do instead of the current code.
+*/
+
+
+
 /*
 public class Board {
     Field[] fields = new Field[]{
@@ -35,6 +42,15 @@ public class Board {
 }
 
  */
+
+
+
+
+
+
+
+
+
 
 /*
 public class Field {
