@@ -113,10 +113,10 @@ public class Gui {
         boolean choose = gui.getUserLeftButtonPressed("Choose language", "English", "Dansk");
         return choose;
     }
-    public void showMessage(String text){
-        gui.showMessage(text);
-    }
+
+
     public void endGame(){
+
         gui.close();
     }
     public boolean exitGame(String text, String textYes,String textNO){

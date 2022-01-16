@@ -1,18 +1,9 @@
 public class Field {
 
-    /* Start,Rødovrevej,Hvidovrevej,betalSkat1,Øresund,Roskildevej,
-            Valbylandgade,Allegade,
-            FrederiksbergAlle,Tuborg,Bülowsvej,GammelKongevej,
-            DFDS,Bernstofssvej,Hellerupsvej,
-            Strandvejen,Helle,Trianglen,Østerbrogade,
-            Grøningen,ØS,Bredgade,KongensNytorv,Carlsberg,Østergade,
-            Amagertorv,Vimmelskaftet,Nygade,Bornholm,
-            Frederiksberggade,betalSkat2,Rådhuspladsen;
-
-     */
 
 
-    public void fields(Player player,int playerpos,boolean x){//, Player[] playerList,int text){
+
+    public void fields(Player player,int playerpos,boolean x){
         switch (playerpos){
             case 0:
                //Start = 4000;

@@ -18,7 +18,7 @@ public class Game {
     String file;
     String[] read = new String[92];
 
-    int x;
+
     ChanceCard chanceCard = new ChanceCard();
     private void runTurn(int turnNum ){
         player = playerList[turnNum];
@@ -34,26 +34,12 @@ public class Game {
 
 
 
-        // public class Game {
-        // Board board = new Board();
-        // Player player1 = new Player(name: "string");
-        //
-        // void runTurn() {
-        // Field currentField = board.fields();
-        // if (currentField instanceof Field) {
-        //      if (((Field) currentField). owner = null) {
-        //
-        // }}}
-        // ...
+
 
 
         gui.moveplayer(turnNum,player.position);
 
-       //if (gui.buyButton()==false) {
-         //   field.fields(player, player.position, false);
-        //} else if (gui.buyButton()==true) {
-            //field.fields(player, player.position, true);
-        //}
+
 
 
         gui.Dice(die1Facevalue,die2Facevalue);
